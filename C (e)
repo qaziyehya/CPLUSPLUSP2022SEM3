@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, reversedNumber = 0, remainder,rev = 0, rem;
+
+    cout << "Enter a 5 digit: ";
+    cin >> n;
+
+    while (n != 0)
+    {
+        remainder = n % 10;
+        reversedNumber = reversedNumber * 10 + remainder;
+        n /= 10;
+    }
+
+    cout << "Reversed Number = " << reversedNumber;
+
+    
+      if (n == reversedNumber)
+    {
+        cout << "\nThe number in reverse order is equal";
+    }
+    else
+    {
+        cout << "\nThe number in reverse order is not equal";
+    }
+
+return 0;
+}
