@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int sun=30;
+    int hot=0,pleasant=0,cold=0,sum=0;
+    int i,temp;
+    for ( i = 0; i < sun; i++)
+    {
+        cout <<"\n";
+        cout << "Enter the temperature\n" ;
+        cin >> temp;
+        sum+=temp;
+
+        if (temp>=85)
+        {
+            cout << "It is a hot day\n " << temp,++hot;
+            
+
+        }
+        else if (temp>=60 && temp<=84)
+        {
+            cout << "It is a pleasant day\n"<< temp,++pleasant;
+
+        }
+        else 
+        {
+            cout <<"It is a cold day\n" << temp,++cold;
+        }
+        cout <<"\n";
+       
+
+        cout << "The collection of hot days is\n " << hot;
+        cout <<"\n";
+        cout << "The collection of plesant days is\n " << pleasant;
+        cout <<"\n";
+        cout << "The collection of cold is\n " << cold;
+
+        
+        
+    }
+        
+    return 0;
+}
