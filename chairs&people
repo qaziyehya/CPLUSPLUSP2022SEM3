@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int c,p;
+int i;
+int j=c*(c-1);
+cout<<"Enter the number of people\n";
+cin>> p;
+cout<<"Enter the number of chairs\n";
+cin>> c;
+
+cout<<"The number of of arrangements are;\n";
+for ( i = 1; i <= c; i++)
+{
+   cout<<"\n"<<c;
+   c=c*(c-1);
+
+}
+
+
+
+    return 0;
+}
